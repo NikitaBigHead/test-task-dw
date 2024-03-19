@@ -1,0 +1,108 @@
+.card_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 19px;
+    gap: 15px;
+
+    max-width: 410px;
+    background: linear-gradient(90deg, #fbfdff 0%, #d8efff 100.86%);
+    box-shadow: 0px 0px 25px rgba(142, 160, 173, 0.35);
+    border-radius: 20px;
+}
+.inhaler_count {
+    width: 178px;
+    height: 145px;
+    position: relative;
+}
+.inhaler_img {
+    top: 0;
+    left: 0;
+    right: auto !important;
+    width: 125.2px !important;
+    height: 105.18px !important;
+}
+
+.circle_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    right: 0;
+}
+.circle_img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.count {
+    position: relative;
+    z-index: 998;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #01457a;
+}
+
+.card_title {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    color: #01457a;
+    text-align: center;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.card_description {
+    text-align: center;
+
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #01457a;
+}
+
+@media (max-width: 1120px) {
+    .card_section {
+        justify-self: center;
+        max-width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .card_section {
+        justify-self: center;
+        max-width: 100%;
+    }
+    .inhaler_count {
+        width: 158px;
+        height: 125px;
+        position: relative;
+    }
+    .card_title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .card_description {
+        font-size: 20px;
+        line-height: 19px;
+    }
+    .circle_count {
+        width: 60px;
+        height: 60px;
+    }
+}

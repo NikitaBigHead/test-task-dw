@@ -1,0 +1,174 @@
+.card {
+    position: relative;
+    height: 212px;
+    display: flex;
+
+    padding: 40px 29px 40px 38px;
+    gap: 29px;
+
+    background: #ffffff;
+    border: 1px solid #01457a;
+    box-shadow: 0px 0px 25px rgba(142, 160, 173, 0.35);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card_section {
+    display: flex;
+    gap: 29px;
+}
+.card_block {
+    display: flex;
+    gap: 29px;
+}
+.icon {
+    position: static !important;
+    width: 80px !important;
+    height: 80px !important;
+}
+.pointer {
+    right: -24.13px !important;
+    top: -24.13px !important;
+    left: auto !important;
+    width: 48.26px !important;
+    height: 48.26px !important;
+}
+
+.qustion_section {
+    position: relative;
+    width: 295px;
+    height: 114.5px;
+}
+.qustion_background {
+    position: absolute !important;
+    top: 0;
+}
+
+.qustion_text {
+    display: block;
+    position: relative;
+    z-index: 998;
+
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #01457a;
+}
+
+.description {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #01457a;
+
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.description::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 90%;
+
+    position: absolute;
+    top: 39px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 100%
+    );
+}
+
+@media (max-width: 1380px) {
+    .card {
+        flex-direction: column;
+        height: max-content;
+    }
+    .card_block {
+        float: left;
+        padding-right: 29px;
+        padding-bottom: 10px;
+    }
+    .card_section {
+        display: inline-block;
+    }
+}
+@media (max-width: 1120px) {
+    .description::after {
+        content: "";
+        display: none;
+    }
+}
+@media (max-width: 756px) {
+    .card_block {
+        float: none;
+    }
+
+    .qustion_text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .description::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 90%;
+
+        position: absolute;
+        top: 39px;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            #ffffff 100%
+        );
+    }
+}
+@media (max-width: 580px) {
+    .qustion_background {
+        display: none;
+    }
+    .qustion_section {
+        width: 100%;
+        height: max-content;
+    }
+    .qustion_text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .card_block {
+        flex-direction: column;
+        justify-content: left;
+    }
+    .card {
+        padding: 20px;
+    }
+    .description::after {
+        height: 65%;
+    }
+}
+@media (max-width: 580px) {
+    .description::after {
+        height: 80%;
+    }
+}
+@media (max-width: 390px) {
+    .description::after {
+        height: 85%;
+    }
+}

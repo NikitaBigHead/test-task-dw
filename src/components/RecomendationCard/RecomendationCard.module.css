@@ -1,0 +1,29 @@
+.recomendation_section {
+    padding: 30px 40px;
+    width: 630px;
+    background: linear-gradient(90deg, #fbfdff 0%, #d8efff 100.86%);
+    box-shadow: 0px 0px 25px rgba(142, 160, 173, 0.35);
+    border-radius: 20px;
+}
+.text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #01457a;
+}
+@media (max-width: 956px) {
+    .recomendation_section {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block;
+    }
+}

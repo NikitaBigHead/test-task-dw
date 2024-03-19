@@ -1,0 +1,30 @@
+.warning_section {
+    padding: 10px;
+    margin-left: 45px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 83px;
+
+    background: linear-gradient(90deg, #fdd966 0%, #bcd77e 68.54%);
+    border-radius: 20px;
+
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #01457a;
+}
+@media (max-width: 1380px) {
+    .warning_section {
+        margin-right: 45px;
+        height: max-content;
+    }
+}
